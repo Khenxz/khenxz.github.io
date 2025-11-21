@@ -1,0 +1,110 @@
+
+
+/* Definições de Cores Fsocity/Terminal */
+:root {
+    --color-bg: #000000;          /* Fundo Preto */
+    --color-text: #00ff41;        /* Texto Verde Neon (Terminal) */
+    --color-highlight: #ff0000;   /* Destaque (Vermelho de erro/alerta) */
+    --color-border: #00ff41;      /* Borda Verde Neon */
+    --font-terminal: 'Courier New', 'Lucida Console', monospace;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-terminal);
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    border: 3px solid var(--color-border); /* Borda externa do terminal */
+    box-sizing: border-box;
+}
+
+/* Remove margem da tela e adiciona padding interno para simular o terminal */
+section, header, footer {
+    padding: 20px 30px; 
+    margin: 0;
+}
+
+header h1 {
+    font-size: 1.8em;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-shadow: 0 0 5px var(--color-text); /* Efeito neon leve */
+}
+
+/* Títulos das Seções */
+h2 {
+    color: var(--color-highlight); /* Usa o vermelho para destaque dos títulos principais */
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--color-highlight); /* Borda lateral de destaque */
+    padding-left: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--color-border);
+    box-shadow: 0 0 5px var(--color-border);
+    margin: 20px 30px;
+}
+
+/* Estilos de Link (A) */
+a {
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--color-text); /* Sublinhado pontilhado */
+}
+
+a:hover {
+    color: var(--color-highlight);
+    border-bottom: 1px solid var(--color-highlight);
+}
+
+/* --- Sobre Mim --- */
+#about ul {
+    list-style-type: '>> '; /* Símbolo para imitar a linha de comando */
+    padding-left: 20px;
+}
+#about strong {
+    color: #fff; /* O nome e as palavras-chave em branco para se destacarem */
+}
+
+/* --- Habilidades --- */
+#skills .skills-group {
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+#skills .skills-group h3 {
+    color: var(--color-highlight); 
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* --- Projetos --- */
+.project-card {
+    border: 1px solid var(--color-border);
+    padding: 15px;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo sutilmente mais escuro */
+}
+.project-card h3 a {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.project-card p {
+    margin: 5px 0;
+}
+
+/* Rodapé */
+footer {
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 10px;
+}
